@@ -1,4 +1,5 @@
 import React from 'react';
+import Calculator from './Calculator';
 import logo from '../assets/logo.svg';
 import './App.css';
 
@@ -38,9 +39,7 @@ class App extends React.PureComponent {
       <div className="App">
         <header className="App-header">
           WebAssembly with Rust and React (Using create-react-app)
-          <button onClick={this.showGreet}>
-            Show greet from Rust
-          </button>
+          <Calculator nativeModule={this.state.nativeModule} />
         </header>
       </div>
     );

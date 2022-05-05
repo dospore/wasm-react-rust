@@ -1,4 +1,5 @@
 mod utils;
+mod calculator;
 
 use wasm_bindgen::prelude::*;
 
@@ -18,3 +19,4 @@ pub fn greet(s: &str) {
     let greet_text = format!("Hello, {}! I am a rust code, greeting you! All from your browser...!", s);
     alert(&greet_text);
 }
+
